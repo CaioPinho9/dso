@@ -11,7 +11,10 @@ class Produto:
     ):
         self.__codigo = codigo
         self.__descricao = descricao
-        self.__categoria_produto = categoria
+        if isinstance(codigo, CategoriaProduto):
+            self.__categoria_produto = categoria
+        else:
+            raise ValueError
 
     @property
     def codigo(self):

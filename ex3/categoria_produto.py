@@ -8,7 +8,4 @@ class CategoriaProduto:
 
     @titulo.setter
     def titulo(self, titulo=""):
-        if isinstance(titulo, str):
-            self.__titulo = titulo
-        else:
-            raise ValueError
+        self.__titulo = titulo

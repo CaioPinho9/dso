@@ -9,10 +9,7 @@ class Cliente:
 
     @nome.setter
     def nome(self, nome=""):
-        if isinstance(nome, str):
-            self.__nome = nome
-        else:
-            raise ValueError
+        self.__nome = nome
 
     @property
     def fone(self):
@@ -20,7 +17,4 @@ class Cliente:
 
     @fone.setter
     def fone(self, fone=0):
-        if isinstance(fone, int):
-            self.__fone = fone
-        else:
-            raise ValueError
+        self.__fone = fone
